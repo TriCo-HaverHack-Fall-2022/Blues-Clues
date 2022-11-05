@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haverford Hackathon</title>
+
+      <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+
+     <!-- Load our React component. -->
+     <script src="like_button.js"></script>
+</head>
+<style>
+
+    .left {
+        width: 50%;
+        float: left;
+       
+    }  
+    .right {
+        width: 50%;
+        float: right;
+    
+        
+    }
+</style>
+<body>
+    <div id = "grad1">
+    <section class="header">
+       <div class = "text">
+            <h1>Blues Clues Group Presentation</h1>
+            <h1>on</h1>
+            <h1>Blue Bus Schedule Problem</h1>
+       </div>
+    </section>
+    
+        <div id='content'>
+            <h1 style = "color: whitesmoke">What's the Problem?</h1>
+            <p> The Blue Bus schedule does not work well with students taking classes across Haverford and Bryn Mawr campus</p>
+        
+            <h2 style = "color: whitesmoke">Data Graphs: </h2>
+
+            <div class = "left">
+                <p>Bryn Mawr to Haverford on Mondays</p>
+                <img src="https://i.gyazo.com/b010bd3588001a2e3dc1894395434a8d.png">
+                <p>Bryn Mawr to Haverford on Tuesday</p>
+                <img src="https://i.gyazo.com/8429f56ae5bebf5e852e354ca092e048.png">
+                <p>Bryn Mawr to Haverford on Wednesday</p>
+                <img src="https://i.gyazo.com/7b2eb03665d070ce3342e0e26f74055c.png">
+                <p>Bryn Mawr to Haverford on Thursday</p>
+                <img src="https://i.gyazo.com/96c69b8274b865b37f72b33973bd4e2c.png">
+                <p>Bryn Mawr to Haverford on Friday</p>
+                <img src="https://i.gyazo.com/09e7a0dbaa64dc26ae49ecb90b3f6993.png">
+                </div>
+            </div>
+    
+            <div class = "right">
+                <p>Haverford to Bryn Mawr on Mondays</p>
+                <img src="https://i.gyazo.com/cc7f270068d3e06ddbe318379cb82ad7.png">
+                <p>Haverford to Bryn Mawr on Tuesday</p>
+                <img src="https://i.gyazo.com/00bb39b18b0883fc82e01ac1f89a6e50.png">
+                <p>Haverford to Bryn Mawr on Wednesday</p>
+                <img src="https://i.gyazo.com/d766f7f98a10660c0ef0aa6889ba12c5.png">
+                <p>Haverford to Bryn Mawr on Thursday</p>
+                <img src="https://i.gyazo.com/0c0c362cff50b6ad18b3c5ce2f710367.png">
+                <p>Haverford to Bryn Mawr on Friday</p>
+                <img src="https://i.gyazo.com/751b36060d9a1d57efa1a9e01dbebe01.png">
+            </div>
+            
+            <h2 style = "color: whitesmoke">Possible Product Solutions</h2>
+            <ul style = "color: whitesmoke">Creating an app that students can input their schedule into and remind them to take the bus at X time.</ul>
+        </div>
+    </div>
+    
+</body>
+</html>
+
+CSS:
+html * {
+    font-family: arial;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(https://i0.wp.com/haverfordclerk.com/wp-content/uploads/2019/09/IMG_2075.jpg?fit=1200%2C706);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+
+.text {
+    width: 65%;
+    color: white;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.text h1 {
+    font-size: 75px;
+    font-weight: bolder;
+}
+
+
+#grad1 {
+    background-image: linear-gradient(#80CCD8, #4D71C6);
+}
